@@ -1,4 +1,6 @@
-# Information about Features
+# Project By Jayant, Vineet, Pradyumn Shukla
+
+### Information about Features
 ![img](https://www.rochesterfirst.com/wp-content/uploads/sites/66/2020/04/Coronavirus-COVID-19-COVID19-pandemic.jpg?w=522&h=304&crop=1&resize=1280,720)
 
 - LYM: Lymphocytes are a type of white blood cell which also have an elevated count during times of infection. Normal Lymphocte count ranges from 800-5000 (0.8-5.0) lymphocy
