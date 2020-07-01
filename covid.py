@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import pickle
 # pandas defaults
 pd.options.display.max_columns = 500
 pd.options.display.max_rows = 500
@@ -17,3 +18,9 @@ from sklearn import svm
 clf= svm.SVC(kernel='linear')
 clf.fit(X_train,y_train)
 y_pred=clf.predict(X_test)
+
+pickle.dump(clf, open('model.pkl','wb'))
+
+# Loading model to compare the results
+model = pickle.load(open('model.pkl','rb'))
+#print(model.predict([[2, 9, 6]]))
