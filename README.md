@@ -1,4 +1,4 @@
-# Project By Jayant, Vineet, Pradyumn Shukla
+# Project By Jayant, Vineet, Pradyumn Shukla (Team Rebels)
 Clone this repository, open Anaconda prompt and move into the folder and type- python app.py
 
 The app will be running on the http://127.0.0.1:5000/
