@@ -1,5 +1,5 @@
 import numpy as np
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, render_template
 import pickle
 
 app = Flask(__name__)
@@ -11,23 +11,19 @@ def home():
 
 @app.route('/predict',methods=['POST'])
 def predict():
-    '''
-    For rendering results on HTML GUI
-    '''
+
     int_features = [float(x) for x in request.form.values()]
     final_features = [np.array(int_features)]
 
+    print(final_features)
     prediction = model.predict(final_features)
-
-    output = round(prediction[0], 2)
-    result = str();
-    if output==1:
-        result = 'Positive'
-    elif output==0:
-        result = 'Negative'
+    if(prediction[0] ==0):
+        output = "Negative"
+    elif(prediction[0] ==1):
+        output = "Positive"
     else:
-        output = 'Unpredicted value'
-    return render_template('index.html', prediction_text='Test result is {}'.format(result))
+        output = "Unpredicted"
+    return render_template('index.html', prediction_text='Test result is {}'.format(output))
 
 
 if __name__ == "__main__":
