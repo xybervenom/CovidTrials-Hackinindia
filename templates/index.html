@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html >
-<!--From https://codepen.io/frytyler/pen/EGdtg-->
 <head>
   <meta charset="UTF-8">
   <title>ML API</title>
@@ -8,11 +7,15 @@
 <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../static/css/style.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> 
 
 </head>
 
 <body>
- <div class="login">
+ <div class="login" >
+    <strong>Check this project out on <a style="color: rgba(249,164,4);" href="https://github.com/xybervenom/Predict-Covid-Report">GitHub</a></strong>
+    <strong>Made with ❤️ by <a style="color: rgb(249,164,4);" href="https://github.com/xybervenom">Jayant Jain</a></strong>
 	<h1>Predict Corona Report</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
@@ -37,12 +40,15 @@
 		<input type="text" name="ldh" placeholder="LDH, U/L" required="required" />
 		<input type="text" name="fib" placeholder="Fib, g/L" required="required" />
 		<input type="text" name="dd" placeholder="D‐D, ug/mL" required="required" />
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
 
    <br>
    <br>
    {{ prediction_text }}
+   <br>
+   <br>
+
 
  </div>
 
