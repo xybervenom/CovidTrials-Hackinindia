@@ -1,4 +1,4 @@
-# Project By Jayant, Vineet, Pradyumn Shukla (Team Rebels) for HACK IN INDIA Hackathon
+# Project for HACK IN INDIA Hackathon (1-2 July 2020)
 Clone this repository, open Anaconda prompt and move into the folder and type
 * python app.py
 
